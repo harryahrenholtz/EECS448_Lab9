@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <script type="text/javascript" src="formChecker.js"></script>
+		<link href="style.css" rel="stylesheet" type="text/css"/>
+		<title>Web Store</title>
+  </head>
+  <body>
+		<form onsubmit="return checker();" action="customerBackend.php" method="post">
+			Username: <input type="email" name="email" id="email"><br>
+			Password: <input type="password" name="password" id="password"><br><br><br>
+			Grand Tetons Picture<br>Price: $39.99<br>
+			<img src="img/tetons.jpg" width="200" height = "200"></img><br>
+			Quantity: <input type="text" name="tetQ" id="tetQ"><br><br>
+			Ozarks Picture<br>Price: $40.99<br>
+			<img src="img/ozarks.jpg" width="200" height = "200"></img><br>
+			Quantity: <input type="text" name="ozarkQ" id="ozarkQ"><br><br>
+			Yellowstone Picture<br>Price: $69.99<br>
+			<img src="img/yellowstone.jpg" width="200" height = "200"></img><br>
+			Quantity: <input type="text" name="yellowQ" id="yellowQ"><br><br><br>
+			Shipping Options:<br>
+			<input type="radio" name="ship" id="free" value="Standard">Free 7 day</input><br>
+			<input type="radio" name="ship" id="overnight" value="Overnight">$50.00 overnight</input><br>
+			<input type="radio" name="ship" id="3day" value="Three Day">$5.00 three day</input><br><br>
+			<input type="submit" value="Purchase"><br><br>
+		</form>
+		<button onclick="document.location.href='https://people.eecs.ku.edu/~h932a540/EECS448_Lab9/web_store/frontend.html'">Reset</button>
+  </body>
+</html>
